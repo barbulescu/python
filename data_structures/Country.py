@@ -26,3 +26,9 @@ print(max(countries, key=attrgetter('population')))
 print(min(countries, key=attrgetter('population')))
 print(max(countries, key=attrgetter('area')))
 print(min(countries, key=attrgetter('area')))
+
+country_length = [ len(c.name) for c in countries ]
+print(country_length)
+
+country_length_3 = [ len(c.name) for c in countries if len(c.name) == 3]
+print(country_length_3)
